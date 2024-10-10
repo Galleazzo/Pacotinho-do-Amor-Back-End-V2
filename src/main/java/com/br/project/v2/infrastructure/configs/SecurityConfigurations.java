@@ -31,6 +31,7 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
                         .requestMatchers(HttpMethod.OPTIONS, "/auth/checkToken").permitAll()
                         .requestMatchers(HttpMethod.GET, "/auth/checkToken").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/user/newExternalUser").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(this.securityFilter, UsernamePasswordAuthenticationFilter.class)
