@@ -6,9 +6,11 @@ import com.br.project.v2.infrastructure.repositories.AnimalsRepository;
 import com.br.project.v2.usecases.Animals.SaveUseCase;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
+@Service
 public class SaveUseCaseImpl implements SaveUseCase {
 
     @Autowired

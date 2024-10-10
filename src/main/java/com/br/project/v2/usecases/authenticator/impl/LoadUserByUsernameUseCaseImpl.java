@@ -5,7 +5,9 @@ import com.br.project.v2.usecases.authenticator.LoadUserByUsernameUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
+@Service
 public class LoadUserByUsernameUseCaseImpl implements LoadUserByUsernameUseCase {
 
     @Autowired

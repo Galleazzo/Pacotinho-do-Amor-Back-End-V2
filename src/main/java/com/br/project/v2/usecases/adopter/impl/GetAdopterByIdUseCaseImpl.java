@@ -6,7 +6,9 @@ import com.br.project.v2.infrastructure.repositories.AdopterRepository;
 import com.br.project.v2.usecases.adopter.GetAdopterById;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class GetAdopterByIdUseCaseImpl implements GetAdopterById {
 
     @Autowired

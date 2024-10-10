@@ -6,8 +6,10 @@ import com.br.project.v2.infrastructure.repositories.AdopterRepository;
 import com.br.project.v2.usecases.adopter.CreateAdopterUseCase;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+@Service
 public class CreateAdopterUseCaseImpl implements CreateAdopterUseCase {
 
     @Autowired

@@ -4,11 +4,13 @@ import com.br.project.v2.domain.entities.Animals;
 import com.br.project.v2.infrastructure.repositories.AnimalsRepository;
 import com.br.project.v2.usecases.Animals.ChangeActiveUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
 
+@Service
 public class ChangeActiveUseCaseImpl implements ChangeActiveUseCase {
 
     @Autowired
